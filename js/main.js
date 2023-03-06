@@ -11,6 +11,7 @@ const els = {
   searchSerInput: document.getElementById('searchSerInput'),
   searchSerBtn: document.getElementById('searchSerBtn'),
   radioGenderFS: document.getElementById('radioGender'),
+  genderSelectEl: document.getElementById('genderSelect'),
 };
 console.log('els ===', els);
 // aplikacijos globalus masyvas
@@ -90,7 +91,7 @@ radioInputsArr.forEach((inputEl) => {
 
 function radioFilter(event) {
   const inputRadioEl = event.target;
-  // console.log('radioFilter', inputRadioEl);
+  console.log('radioFilter', inputRadioEl);
   const filterBy = inputRadioEl.value;
   if (filterBy === 'all') {
     render(mainUserArrState);
@@ -99,3 +100,5 @@ function radioFilter(event) {
     render(filtered);
   }
 }
+// select
+els.genderSelectEl.addEventListener('change', radioFilter);
