@@ -1,0 +1,109 @@
+<mxfile host="65bd71144e">
+    <diagram id="cx1NCF7HbAlsAC7-D7oh" name="Page-1">
+        <mxGraphModel dx="1953" dy="494" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="280" y="770" as="sourcePoint"/>
+                        <mxPoint x="280" y="40" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="computer, client&lt;br&gt;Browser" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="10" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;" edge="1" parent="1" source="4">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="360" y="170" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="REQUEST" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6">
+                    <mxGeometry x="-0.3351" y="1" relative="1" as="geometry">
+                        <mxPoint x="20" y="-9" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="GET&amp;nbsp; HTTP 1.1&lt;br&gt;http://127.0.0.1:5500/index.html" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="140" width="230" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Server, BE, Internet" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="10" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="7" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="DNS server&lt;br&gt;www.manopsl.lt =&amp;gt; pavadinima i IP Addres (127.0.0.1)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="140" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=none;html=1;" edge="1" parent="1" source="8">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="240" y="320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="RESPONSE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9">
+                    <mxGeometry x="0.4523" y="1" relative="1" as="geometry">
+                        <mxPoint x="27" y="-19" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="surandam serveri pgl IP adrress ir puslapi index.html" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="290" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="index.html&lt;br&gt;&lt;div style=&quot;color: rgb(255, 255, 255); background-color: rgb(25, 53, 73); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #e1efff;&quot;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&quot;color: #9effff;&quot;&gt;DOCTYPE &lt;/span&gt;&lt;span style=&quot;color: #ffc600;font-style: italic;&quot;&gt;html&lt;/span&gt;&lt;span style=&quot;color: #e1efff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #e1efff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #9effff;&quot;&gt;html &lt;/span&gt;&lt;span style=&quot;color: #ffc600;font-style: italic;&quot;&gt;lang&lt;/span&gt;&lt;span style=&quot;color: #e1efff;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #92fc79;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #a5ff90;&quot;&gt;en&lt;/span&gt;&lt;span style=&quot;color: #92fc79;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #e1efff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #e1efff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #9effff;&quot;&gt;head&lt;/span&gt;&lt;span style=&quot;color: #e1efff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #e1efff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #9effff;&quot;&gt;meta &lt;/span&gt;&lt;span style=&quot;color: #ffc600;font-style: italic;&quot;&gt;charset&lt;/span&gt;&lt;span style=&quot;color: #e1efff;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #92fc79;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #a5ff90;&quot;&gt;UTF-8&lt;/span&gt;&lt;span style=&quot;color: #92fc79;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #e1efff;&quot;&gt;&amp;gt;...&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="280" width="230" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="14" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="getPosts()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="480" width="230" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;html=1;" edge="1" parent="1" source="15" target="19">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="get 100 posts" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="20">
+                    <mxGeometry x="-0.5827" relative="1" as="geometry">
+                        <mxPoint x="26" y="-15" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="posts" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="550" width="230" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="16" target="15">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="fetch()&lt;br&gt;GET&amp;nbsp;https://jsonplaceholder.typicode.com/posts" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-30" y="550" width="290" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="19">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="700" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="780" y="680"/>
+                            <mxPoint x="690" y="680"/>
+                            <mxPoint x="690" y="700"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="100 posts arr" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="21">
+                    <mxGeometry x="-0.018" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="535" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="24" target="26">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="695" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="postsArr JSON" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="670" width="230" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value=".then(dataInJs =&amp;gt; {&lt;br&gt;console.log(dataInJs)})" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry y="675" width="240" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
