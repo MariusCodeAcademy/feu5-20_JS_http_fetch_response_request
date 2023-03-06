@@ -8,8 +8,10 @@ export const ulEl = document.getElementById('app');
 const els = {
   femalesOnlyBtn: document.getElementById('femalesOnly'),
   allUsersBtn: document.getElementById('allUsers'),
+  searchSerInput: document.getElementById('searchSerInput'),
+  searchSerBtn: document.getElementById('searchSerBtn'),
 };
-
+console.log('els ===', els);
 // aplikacijos globalus masyvas
 export let mainUserArrState = [];
 console.log('mainUserArrState ===', mainUserArrState);
@@ -17,7 +19,7 @@ console.log('mainUserArrState ===', mainUserArrState);
 // event listeners
 
 // paspaudus searchSerBtn kvieciam searchFromServer()
-
+els.searchSerBtn.addEventListener('click', searchFromServer);
 // iskviesti femalesOnlyBtn paspaudimu showOnlyFemales()
 els.femalesOnlyBtn.addEventListener('click', showOnlyFemales);
 // showOnlyFemales() atrinkti ir atspausinti tik moteris is mainUserArrState
@@ -51,8 +53,22 @@ fetch(url)
 // kviecam render()
 
 function searchFromServer() {
+  console.log('searchFromServer');
   // paimti reikmes is input searchSerInput
+  const searchTerm = els.searchSerInput.value.trim();
+  // console.log('searchTerm ===', searchTerm);
   // sukurti nauja fetch uzklausa kurio url turi query parametra
+  const urlSearch = `https://dummyjson.com/users/search?q=${searchTerm}`;
+  console.log('urlSearch ===', urlSearch);
+
+  fetch(urlSearch)
+    .then((resp) => resp.json())
+    .then((dataInJs) => {
+      console.log('dataInJs ===', dataInJs);
+      mainUserArrState = dataInJs.users;
+      render(mainUserArrState);
+    })
+    .catch(console.warn);
   // 'https://dummyjson.com/users/search?q=<inputo reiksme>';
   // 'https://dummyjson.com/users/search?q=jo';
   // 'https://dummyjson.com/users/search?q=mike';
