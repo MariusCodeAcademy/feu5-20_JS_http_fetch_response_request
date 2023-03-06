@@ -13,7 +13,9 @@ let mainUserArrState = [];
 console.log('mainUserArrState ===', mainUserArrState);
 
 // event listeners
+
 // iskviesti femalesOnlyBtn paspaudimu showOnlyFemales()
+els.femalesOnlyBtn.addEventListener('click', showOnlyFemales);
 // showOnlyFemales() atrinkti ir atspausinti tik moteris is mainUserArrState
 // ikviesti render(atrinka masyva) paduoti atrinkta masyva
 
@@ -49,14 +51,20 @@ function render(arr) {
 // atrekam tik moteris
 function showOnlyFemales() {
   console.log('showOnlyFemales ');
+  // showOnlyFemales() atrinkti ir atspausinti tik moteris is mainUserArrState
+  const moterysOnlyArr = mainUserArrState.filter((uObj) => uObj.gender === 'female');
+  console.log('moterysOnlyArr ===', moterysOnlyArr);
+  render(moterysOnlyArr);
 }
 // kvieciam render()
+
 // jieskom pagal varda, atrenkam tik kas atitinka
 // kviecam render()
 
 function makeOneEl(obj) {
   const liEl = document.createElement('li');
-  liEl.className = 'userLi';
+  const maleFemaleClass = obj.gender === 'male' ? 'male' : 'female';
+  liEl.className = `userLi ${maleFemaleClass}`;
   liEl.innerHTML = `
   <span>${obj.firstName} ${obj.lastName}</span>,
   <span>${obj.gender === 'male' ? 'Vyras' : 'Moteris'}</span>

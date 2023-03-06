@@ -6,3 +6,11 @@
   padding: 0.5em;
   font-size: 1.7rem;
 }
+
+.female {
+  background-color: rgb(253, 201, 192);
+}
+
+.male {
+  background-color: rgb(196, 196, 254);
+}
