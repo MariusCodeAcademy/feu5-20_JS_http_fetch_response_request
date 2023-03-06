@@ -1,0 +1,7 @@
+{
+  "username": "James",
+  "town": "London",
+  "age": 45,
+  "isAwesome": true,
+  "movies": ["007", "Return of Bond"]
+}
