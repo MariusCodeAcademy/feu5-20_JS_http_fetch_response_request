@@ -28,6 +28,8 @@ els.femalesOnlyBtn.addEventListener('click', showOnlyFemales);
 // ikviesti render(atrinka masyva) paduoti atrinkta masyva
 els.allUsersBtn.addEventListener('click', showAll);
 
+// sukurti fetchData() kuri grazina duomenis
+// fetchData(url).then((data) => console.log(data));
 // parsiusti ir iskonsolinti visus userius
 fetch(url)
   .then((resp) => resp.json())
