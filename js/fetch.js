@@ -18,3 +18,14 @@ function getLocalTextFetch() {
     .catch(console.warn);
 }
 getLocalTextFetch();
+
+function addFooter() {
+  fetch('/db/footer.html')
+    .then((resp) => resp.text())
+    .then((footerHtml) => {
+      console.log('footerHtml ===', footerHtml);
+      document.body.insertAdjacentHTML('beforeend', footerHtml);
+    })
+    .catch(console.warn);
+}
+addFooter();
