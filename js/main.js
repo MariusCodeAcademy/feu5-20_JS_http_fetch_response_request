@@ -34,6 +34,7 @@ fetch(url)
     // console.log('dataInJs ===', dataInJs);
     mainUserArrState = dataInJs.users.slice(0, 10);
     // console.log('mainUserArrState has changed ===', mainUserArrState);
+    console.log('mainUserArrState[0] ===', mainUserArrState[0]);
     render(mainUserArrState);
   })
   .catch(console.warn);
