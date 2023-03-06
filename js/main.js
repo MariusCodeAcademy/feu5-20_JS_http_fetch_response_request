@@ -10,6 +10,7 @@ const els = {
   allUsersBtn: document.getElementById('allUsers'),
   searchSerInput: document.getElementById('searchSerInput'),
   searchSerBtn: document.getElementById('searchSerBtn'),
+  radioGenderFS: document.getElementById('radioGender'),
 };
 console.log('els ===', els);
 // aplikacijos globalus masyvas
@@ -74,4 +75,27 @@ function searchFromServer() {
   // 'https://dummyjson.com/users/search?q=jo';
   // 'https://dummyjson.com/users/search?q=mike';
   // su gautais duomenimis piesiam render()
+}
+
+//
+
+console.log('els.radioGenderFS ===', els.radioGenderFS);
+
+const radioInputsArr = els.radioGenderFS.querySelectorAll('input');
+console.log('radioInputsArr ===', radioInputsArr);
+
+radioInputsArr.forEach((inputEl) => {
+  inputEl.addEventListener('change', radioFilter);
+});
+
+function radioFilter(event) {
+  const inputRadioEl = event.target;
+  // console.log('radioFilter', inputRadioEl);
+  const filterBy = inputRadioEl.value;
+  if (filterBy === 'all') {
+    render(mainUserArrState);
+  } else {
+    const filtered = mainUserArrState.filter((uObj) => uObj.gender === filterBy);
+    render(filtered);
+  }
 }
