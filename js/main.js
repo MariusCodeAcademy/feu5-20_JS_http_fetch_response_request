@@ -54,5 +54,7 @@ function searchFromServer() {
   // paimti reikmes is input searchSerInput
   // sukurti nauja fetch uzklausa kurio url turi query parametra
   // 'https://dummyjson.com/users/search?q=<inputo reiksme>';
+  // 'https://dummyjson.com/users/search?q=jo';
+  // 'https://dummyjson.com/users/search?q=mike';
   // su gautais duomenimis piesiam render()
 }
