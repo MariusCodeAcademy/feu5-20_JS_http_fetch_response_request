@@ -15,7 +15,7 @@ console.log('mainUserArrState ===', mainUserArrState);
 // event listeners
 // iskviesti femalesOnlyBtn paspaudimu showOnlyFemales()
 // showOnlyFemales() atrinkti ir atspausinti tik moteris is mainUserArrState
-// render(atrinka masyva)
+// ikviesti render(atrinka masyva) paduoti atrinkta masyva
 
 // parsiusti ir iskonsolinti visus userius
 fetch(url)
