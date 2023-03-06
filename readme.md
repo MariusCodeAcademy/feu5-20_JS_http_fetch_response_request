@@ -9,6 +9,8 @@ https://dummyjson.com/docs/users
 3. priekyje atvaizduoti maza paveiklseli is image
 4. paversti filtra i radio buttons
 5. paversti filtra i selecta
+6. prie li elementu prideti age
+7. virs saraso prideti input elementa su mygtuku. isfiltruoti userius kuriu amzius mazesnis nei ivesta
 
 ## reqres.in naujame faile
 
