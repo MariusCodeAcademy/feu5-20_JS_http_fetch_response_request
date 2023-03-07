@@ -12,6 +12,7 @@ const els = {
   searchSerBtn: document.getElementById('searchSerBtn'),
   radioGenderFS: document.getElementById('radioGender'),
   genderSelectEl: document.getElementById('genderSelect'),
+  filterFEInput: document.getElementById('filterFE'),
 };
 console.log('els ===', els);
 // aplikacijos globalus masyvas
@@ -28,6 +29,8 @@ els.femalesOnlyBtn.addEventListener('click', showOnlyFemales);
 // ikviesti render(atrinka masyva) paduoti atrinkta masyva
 els.allUsersBtn.addEventListener('click', showAll);
 
+els.filterFEInput.addEventListener('input', filterFE);
+
 // sukurti fetchData() kuri grazina duomenis
 // fetchData(url).then((data) => console.log(data));
 // parsiusti ir iskonsolinti visus userius
@@ -38,7 +41,7 @@ fetch(url)
     // console.log('dataInJs ===', dataInJs);
     mainUserArrState = dataInJs.users.slice(0, 10);
     // console.log('mainUserArrState has changed ===', mainUserArrState);
-    console.log('mainUserArrState[0] ===', mainUserArrState[0]);
+    console.log('mainUserArrState ===', mainUserArrState);
     render(mainUserArrState);
   })
   .catch(console.warn);
@@ -104,3 +107,18 @@ function radioFilter(event) {
 }
 // select
 els.genderSelectEl.addEventListener('change', radioFilter);
+
+function filterFE() {
+  // console.count('filtruojam userius');
+  const searchTerm = els.filterFEInput.value.trim();
+  console.log('searchTerm ===', searchTerm);
+  const filtered = mainUserArrState.filter(
+    (uObj) =>
+      isThereValueIn(uObj.firstName, searchTerm) || isThereValueIn(uObj.lastName, searchTerm)
+  );
+  render(filtered);
+}
+
+function isThereValueIn(whereToSearch, searchTerm) {
+  return whereToSearch.toLowerCase().includes(searchTerm.toLowerCase());
+}
